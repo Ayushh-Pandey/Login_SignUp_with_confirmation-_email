@@ -19,6 +19,9 @@ const profileRoute = require("./routes/profile/profile.route");
 
 const { connect } = require("./config/databaseConnect");
 
+app.get("/",(req,res)=>{
+    res.send('server is live");
+});
 app.use("/api",userRoute)
 app.use("/api",profileRoute);
 
